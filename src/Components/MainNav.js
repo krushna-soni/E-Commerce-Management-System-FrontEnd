@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import 'C:/Notes/Full Stack/3_React/2-CRUD app/2-crud-app/src/MainNav.css'; // Import the CSS file
+import '../MainNav.css'; // Import the CSS file
 
 const MainNav = () => {
   const navigate = useNavigate();
