@@ -19,7 +19,7 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post('http://localhost:3000/user/signup', {
+      .post('https://e-commerce-management-system-back-end.vercel.app/user/signup', {
         userName: username,
         password: password,
         email: email,

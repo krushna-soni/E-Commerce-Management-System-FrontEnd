@@ -54,7 +54,7 @@ const Update = () => {
     formData.append('name', category);
     formData.append('photo', selectedFile);
 
-    axios.put(`http://localhost:3000/category/${params.id}`, formData, {
+    axios.put(`https://e-commerce-management-system-back-end.vercel.app/category/${params.id}`, formData, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
