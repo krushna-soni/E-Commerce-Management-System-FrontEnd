@@ -28,7 +28,7 @@ const AddCategory = () => {
     formData.append('name', category);
     formData.append('photo', selectedFile);
 
-    axios.post('https://e-commerce-management-system-back-end.vercel.app/category', formData,{
+    axios.post('https://e-commerce-management-system-back-end.vercel.app/category/add-category', formData,{
       headers:{
         Authorization: 'Bearer '+localStorage.getItem('token')
       }

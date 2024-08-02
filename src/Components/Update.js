@@ -19,7 +19,7 @@ const Update = () => {
     const fetchCategory = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:3000/category/${params.id}`, {
+        const response = await axios.get(`https://e-commerce-management-system-back-end.vercel.app/category/${params.id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
