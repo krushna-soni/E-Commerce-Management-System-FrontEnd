@@ -19,7 +19,7 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post('https://e-commerce-management-system-back-end.vercel.app/user/signup', {
+      .post('https://krushna-soni-e-commerce-management-system-back-end.vercel.app/user/signup', {
         userName: username,
         password: password,
         email: email,

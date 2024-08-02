@@ -18,7 +18,7 @@ const Category = () => {
   }
   const deleteData = (id, imgLink) => {
     if (window.confirm('Are you sure?')) {
-      axios.delete(`https://e-commerce-management-system-back-end.vercel.app/category?id=${id}&imageUrl=${imgLink}`, {
+      axios.delete(`https://krushna-soni-e-commerce-management-system-back-end.vercel.app/category?id=${id}&imageUrl=${imgLink}`, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token')
         }
@@ -34,7 +34,7 @@ const Category = () => {
   };  
 
   const getData=()=>{
-    axios.get('https://e-commerce-management-system-back-end.vercel.app/category',{
+    axios.get('https://krushna-soni-e-commerce-management-system-back-end.vercel.app/category',{
       headers:{
         Authorization: 'Bearer '+localStorage.getItem('token')
       }
